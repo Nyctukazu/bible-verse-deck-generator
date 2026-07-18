@@ -36,6 +36,9 @@ dependencies {
     testCompileOnly("org.projectlombok:lombok")
     testAnnotationProcessor("org.projectlombok:lombok")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    // PDF Extraction
+    implementation("org.apache.pdfbox:pdfbox:3.0.1")
 }
 
 tasks.withType<Test> {

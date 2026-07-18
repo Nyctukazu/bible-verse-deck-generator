@@ -13,8 +13,11 @@ import lombok.AllArgsConstructor;
         @Index(name = "idx_book_chapter_verse", columnList = "book")
     }
 )
-@Getter @Setter
-public class BibleModel {
+@Getter 
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class VerseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
